@@ -30,18 +30,21 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="hour">9am  <span> <button class="saveBtn"  type="submit">Save</button> </span> </div>
-      <div class="hour">10am <span> <button class="saveBtn"  type="submit">Save</button> </span> </div>
-      <div class="hour">11am <span> <button class="saveBtn"  type="submit">Save</button> </span> </div>
-      <div class="hour">12pm <span> <button class="saveBtn"  type="submit">Save</button> </span> </div>
-      <div class="hour">1pm <span> <button class="saveBtn"  type="submit">Save</button> </span> </div>
-      <div class="hour">2pm <span> <button class="saveBtn"  type="submit">Save</button> </span> </div>
-      <div class="hour">3pm <span> <button class="saveBtn"  type="submit">Save</button> </span> </div>
-      <div class="hour">4pm <span> <button class="saveBtn"  type="submit">Save</button> </span> </div>
-      <div class="hour">5pm <span> <button class="saveBtn"  type="submit">Save</button> </span> </div>
+      <div class="row" >
+        <div id="9am" class="hour col-12">9:00 am <input id="input9am" class="text-input col-9" placeholder= "Add to Schedule" type="text"> </input> <button class="saveBtn float-right"  type="submit">Save</button> </div>
+        <div class="hour col-12">10:00 am <input id="input10am" class="text-input col-9" placeholder= "Add to Schedule" type="text"> </input> <button class="saveBtn float-right"  type="submit">Save</button> </div>
+        <div class="hour col-12">11:00 am  <input id="input11am" class="text-input col-9" placeholder= "Add to Schedule" type="text"> </input><button class="saveBtn float-right"  type="submit">Save</button> </div>
+        <div class="hour col-12">12:00 pm  <input id="input12pm" class="text-input col-9" placeholder= "Add to Schedule" type="text"> </input><button class="saveBtn float-right"  type="submit">Save</button> </div>
+        <div class="hour col-12">1:00 pm  <input id="input1pm" class="text-input col-9" placeholder= "Add to Schedule" type="text"> </input><button class="saveBtn float-right"  type="submit">Save</button> </div>
+        <div class="hour col-12">2:00 pm  <input id="input2pm" class="text-input col-9" placeholder= "Add to Schedule" type="text"> </input><button class="saveBtn float-right"  type="submit">Save</button> </div>
+        <div class="hour col-12">3:00 pm  <input id="input3pm" class="text-input col-9" placeholder= "Add to Schedule" type="text"> </input><button class="saveBtn float-right"  type="submit">Save</button> </div>
+        <div class="hour col-12">4:00 pm  <input id="input4pm" class="text-input col-9" placeholder= "Add to Schedule" type="text"> </input><button class="saveBtn float-right"  type="submit">Save</button> </div>
+        <div class="hour col-12">5:00 pm  <input id="input5pm" class="text-input col-9" placeholder= "Add to Schedule" type="text"> </input><button class="saveBtn float-right"  type="submit">Save</button> </div>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
