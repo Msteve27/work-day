@@ -1,17 +1,63 @@
 // const moment = require('moment');
 // let now = moment();
-
 // console.log(now.format("HH:mm:ss"));
-
-// let saveBtnEl = document.querySelector(".saveBtn float-right")
 // let addto9amScheduleEl = document.getElementById("input9am")
-let nineamEl = document.getElementById("9am")
+
+
+let saveBtn9amEl = document.getElementById("saveBtn9am")
+let saveBtn10amEl = document.getElementById("saveBtn10am")
+let saveBtn11amEl = document.getElementById("saveBtn11am")
+let saveBtn12pmEl = document.getElementById("saveBtn12pm")
+let saveBtn1pmEl = document.getElementById("saveBtn1pm")
+let saveBtn2pmEl = document.getElementById("saveBtn2pm")
+let saveBtn3pmEl = document.getElementById("saveBtn3pm")
+let saveBtn4pmEl = document.getElementById("saveBtn4pm")
+let saveBtn5pmEl = document.getElementById("saveBtn5pm")
+
 let nineamTime = moment().hour()
+let input9amEl = document.getElementById("input9am")
+let container9amEl = document.getElementById("container9am")
+let input10amEl = document.getElementById("input10am")
+let container10amEl = document.getElementById("container10am")
+let input11amEl = document.getElementById("input11am")
+let container11amEl = document.getElementById("container11am")
+let input12pmEl = document.getElementById("input12pm")
+let container12pmEl = document.getElementById("container12pm")
+let input1pmEl = document.getElementById("input1pm")
+let container1pmEl = document.getElementById("container1pm")
+let input2pmEl = document.getElementById("input2pm")
+let container2pmEl = document.getElementById("container2pm")
+let input3pmEl = document.getElementById("input3pm")
+let container3pmEl = document.getElementById("container3pm")
+let input4pmEl = document.getElementById("input4pm")
+let container4pmEl = document.getElementById("container4pm")
+let input5pmEl = document.getElementById("input5pm")
+let container5pmEl = document.getElementById("container5pm")
 
 
+let saveTask9am = function () {
+  let input9amTask = document.createElement("li");
+  input9amTask.textContent = input9amEl.value;
+  input9amTask.style.fontSize = "small"
+  container9amEl.appendChild(input9amTask);
+}
+// add event listener to search button 
+// saveBtnEl.addEventListener("submit", saveTask);
+saveBtn9amEl.onclick = function (){
+  saveTask9am();
+}
 
-
-
+let saveTask10am = function () {
+  let input10amTask = document.createElement("li");
+  input10amTask.textContent = input10amEl.value;
+  input10amTask.style.fontSize = "small"
+  container10amEl.appendChild(input10amTask);
+}
+// add event listener to search button 
+// saveBtnEl.addEventListener("submit", saveTask);
+saveBtn10amEl.onclick = function (){
+  saveTask10am();
+}
 
 
 
@@ -29,21 +75,21 @@ let nineamTime = moment().hour()
 // }
 // saveBtnEl.addEventListener('click', handle9amSaveEvent) 
 
-let now = moment().format("LT");
-    morning = moment("09:00 AM")
-    evening = moment("05:00 PM")
-console.log(now)
+// let now = moment().format("LT");
+//     morning = moment("09:00 AM")
+//     evening = moment("05:00 PM")
+// console.log(now)
 
 
-if (now.isBetween(morning, evening)) {
+// if (now.isBetween(morning, evening)) {
 
-  console.log('is between')
+//   console.log('is between')
 
-} else {
+// } else {
 
-  console.log('is not between')
+//   console.log('is not between')
 
-}
+// }
 
 
 
