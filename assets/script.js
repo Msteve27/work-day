@@ -59,26 +59,99 @@ saveBtn10amEl.onclick = function (){
   saveTask10am();
 }
 
+let saveTask11am = function () {
+  let input11amTask = document.createElement("li");
+  input11amTask.textContent = input11amEl.value;
+  input11amTask.style.fontSize = "small"
+  container11amEl.appendChild(input11amTask);
+}
+// add event listener to search button 
+// saveBtnEl.addEventListener("submit", saveTask);
+saveBtn11amEl.onclick = function (){
+  saveTask11am();
+}
+
+let saveTask12pm = function () {
+  let input12pmTask = document.createElement("li");
+  input12pmTask.textContent = input12pmEl.value;
+  input12pmTask.style.fontSize = "small"
+  container12pmEl.appendChild(input12pmTask);
+}
+// add event listener to search button 
+// saveBtnEl.addEventListener("submit", saveTask);
+saveBtn12pmEl.onclick = function (){
+  saveTask12pm();
+}
+
+let saveTask1pm = function () {
+  let input1pmTask = document.createElement("li");
+  input1pmTask.textContent = input1pmEl.value;
+  input1pmTask.style.fontSize = "small"
+  container1pmEl.appendChild(input1pmTask);
+}
+// add event listener to search button 
+// saveBtnEl.addEventListener("submit", saveTask);
+saveBtn1pmEl.onclick = function (){
+  saveTask1pm();
+}
+
+let saveTask2pm = function () {
+  let input2pmTask = document.createElement("li");
+  input2pmTask.textContent = input2pmEl.value;
+  input2pmTask.style.fontSize = "small"
+  container2pmEl.appendChild(input2pmTask);
+}
+// add event listener to search button 
+// saveBtnEl.addEventListener("submit", saveTask);
+saveBtn2pmEl.onclick = function (){
+  saveTask2pm();
+}
+
+let saveTask3pm = function () {
+  let input3pmTask = document.createElement("li");
+  input3pmTask.textContent = input3pmEl.value;
+  input3pmTask.style.fontSize = "small"
+  container3pmEl.appendChild(input3pmTask);
+}
+// add event listener to search button 
+// saveBtnEl.addEventListener("submit", saveTask);
+saveBtn3pmEl.onclick = function (){
+  saveTask3pm();
+}
+
+let saveTask4pm = function () {
+  let input4pmTask = document.createElement("li");
+  input4pmTask.textContent = input4pmEl.value;
+  input4pmTask.style.fontSize = "small"
+  container4pmEl.appendChild(input4pmTask);
+}
+// add event listener to search button 
+// saveBtnEl.addEventListener("submit", saveTask);
+saveBtn4pmEl.onclick = function (){
+  saveTask4pm();
+}
+
+let saveTask5pm = function () {
+  let input5pmTask = document.createElement("li");
+  input5pmTask.textContent = input5pmEl.value;
+  input5pmTask.style.fontSize = "small"
+  container5pmEl.appendChild(input5pmTask);
+}
+// add event listener to search button 
+// saveBtnEl.addEventListener("submit", saveTask);
+saveBtn5pmEl.onclick = function (){
+  saveTask5pm();
+}
+
+let nineAM = moment("9:00 am");
+let now = moment();
+console.log(now)
+console.log(now.isBefore(nineAM)) 
+moment((now.isBefore(nineAM))); 
+    console.log("True")
+  
 
 
-// function handle9amSaveEvent(ev) {
-// 	ev.preventDefault()
-// 	let inputValue = addto9amScheduleEl.value
-// 	console.log(addto9amScheduleEl.value)
-
-// 	localStorage.setItem('task', JSON.stringify(inputValue))
-						
-// 	let newtask9amEl = document.createElement('li');
-//   console.log("created li")
-// 	newtask9amEl.textContent = inputValue
-// 	addto9amScheduleEl.appendChild(newtask9amEl)
-// }
-// saveBtnEl.addEventListener('click', handle9amSaveEvent) 
-
-// let now = moment().format("LT");
-//     morning = moment("09:00 AM")
-//     evening = moment("05:00 PM")
-// console.log(now)
 
 
 // if (now.isBetween(morning, evening)) {
